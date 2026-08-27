@@ -1,0 +1,39 @@
+{
+  "generat_la": "2026-08-27T10:06:54+00:00",
+  "agenti": {
+    "discovery_b2b": {
+      "total_leads": 7,
+      "dupa_status": {
+        "Follow-up trimis, în așteptare răspuns": 5,
+        "Zero Value": 2
+      },
+      "dupa_agent_status": {
+        "asteapta": 3,
+        "gata": 4
+      },
+      "dupa_clasificare_scor": {
+        "Cold": 2,
+        "Warm": 2
+      },
+      "dupa_banda_scor_intermediar": {},
+      "dupa_banda_scor_final": {
+        "10-19": 2,
+        "30-40": 2
+      },
+      "dupa_industrie": {
+        "Servicii & Mentenanță": 2,
+        "HoReCa & Catering": 2,
+        "Altele": 1,
+        "Curierat & Livrari": 1,
+        "Constructii & instalatii": 1
+      },
+      "zile_de_la_trimitere_fara_raspuns": {
+        "8+": 3
+      },
+      "feedback_store_dupa_status": {
+        "Vândut - model recomandat": 9,
+        "Vândut - alt model": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,175 @@
+:root {
+  --fundal: #f7f7f8;
+  --fundal-card: #ffffff;
+  --text: #1a1a1e;
+  --text-secundar: #6b6b76;
+  --linie: #e4e4e9;
+  --accent: #4f5dff;
+  --accent-slab: #e8e9ff;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundal: #16161a;
+    --fundal-card: #1f1f26;
+    --text: #eaeaf0;
+    --text-secundar: #9a9aa6;
+    --linie: #2c2c35;
+    --accent: #8b93ff;
+    --accent-slab: #2a2b4d;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fundal);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+}
+
+.pagina-header {
+  padding: 2.5rem 1.5rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pagina-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.7rem;
+}
+
+.subtitlu {
+  color: var(--text-secundar);
+  max-width: 640px;
+  margin: 0 0 0.75rem;
+}
+
+.subtitlu a { color: var(--accent); }
+
+.generat-la {
+  font-size: 0.85rem;
+  color: var(--text-secundar);
+  margin: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.ascuns { display: none; }
+
+#mesaj-eroare {
+  background: #ffecec;
+  color: #900;
+  border: 1px solid #f2b8b8;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+
+.agent-bloc {
+  background: var(--fundal-card);
+  border: 1px solid var(--linie);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.agent-bloc h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+}
+
+.carduri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background: var(--accent-slab);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+}
+
+.card .valoare {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.card .eticheta {
+  font-size: 0.8rem;
+  color: var(--text-secundar);
+}
+
+.grafice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.grafic h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: var(--text-secundar);
+  font-weight: 600;
+}
+
+.grafic-gol {
+  color: var(--text-secundar);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.bara-rand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.bara-eticheta {
+  flex: 0 0 auto;
+  width: 40%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secundar);
+}
+
+.bara-pista {
+  flex: 1 1 auto;
+  background: var(--linie);
+  border-radius: 6px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.bara-umplere {
+  background: var(--accent);
+  height: 100%;
+  border-radius: 6px;
+}
+
+.bara-valoare {
+  flex: 0 0 auto;
+  width: 2.2rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.pagina-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+  color: var(--text-secundar);
+  font-size: 0.8rem;
+}
