@@ -19,13 +19,21 @@ proiect separat ("Agentic Base"), și rămân acolo — vezi
 
 ## Cum se actualizează
 
-Manual, ori de câte ori se dorește o actualizare (nu automat):
+**Automat**, din 1 sep 2026: `rulare_programata.sh` (launchd, zilnic 9:00,
+zile lucrătoare, în proiectul "Agentic Base") rulează Discovery B2B, apoi
+`scripts/actualizeaza_si_publica_statistici.sh` face export + commit + push
+aici, fără intervenție umană — vezi `CLAUDE.md` din "Agentic Base" pentru
+pragurile de siguranță (nu publică nimic dacă exportul eșuează sau produce
+date invalide).
 
-1. În proiectul local "Agentic Base": `python3 scripts/export_statistici_publice.py`
-   — rescrie `Dashboard-Discovery-eLCV/data/stats.json` (citește CRM-ul
-   Workleto real + `_marcaje_locale.json` + `audit_log.csv`).
-2. Verifică rapid conținutul (doar numărători, fără nume/CUI/email).
-3. În acest repo: `git add data/stats.json && git commit -m "..." && git push`.
+Actualizare manuală, imediată (nu trebuie să aștepți ora 9:00):
+
+```bash
+# din proiectul "Agentic Base"
+./scripts/actualizeaza_si_publica_statistici.sh   # export + commit + push
+# SAU doar exportul, fără push:
+python3 scripts/export_statistici_publice.py
+```
 
 Statistica "recomandări cu greșeală" nu se calculează automat — se
 înregistrează manual, după un audit uman al recomandărilor, cu
