@@ -1,45 +1,65 @@
+/* Paletă & stil preluate de la badsi.ro (referință explicită a
+   utilizatorului) — negru / crem / alb, colțuri drepte (border-radius: 0
+   peste tot pe site-ul de referință), font Inter (înlocuitor pentru
+   fontul propriu "Porsche-*" folosit acolo, care e proprietar și nu poate
+   fi îmbrăcat aici). Look FIX, intenționat — brandul de referință nu are
+   variantă dark/light, deci nici acest site nu comută pe
+   prefers-color-scheme, la fel ca sursa. */
 :root {
-  --fundal: #f7f7f8;
-  --fundal-card: #ffffff;
-  --text: #1a1a1e;
-  --text-secundar: #6b6b76;
-  --linie: #e4e4e9;
-  --accent: #4f5dff;
-  --accent-slab: #e8e9ff;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --fundal: #16161a;
-    --fundal-card: #1f1f26;
-    --text: #eaeaf0;
-    --text-secundar: #9a9aa6;
-    --linie: #2c2c35;
-    --accent: #8b93ff;
-    --accent-slab: #2a2b4d;
-  }
+  --negru: #000000;
+  --crem: #fdf8f4;
+  --alb: #ffffff;
+  --text: #212529;
+  --text-secundar: #5c6066;
+  --linie: rgba(0, 0, 0, 0.14);
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
 
 body {
   margin: 0;
-  background: var(--fundal);
+  background: var(--crem);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
 }
 
-.pagina-header {
-  padding: 2.5rem 1.5rem 1.5rem;
-  max-width: 960px;
-  margin: 0 auto;
+.bara-brand {
+  background: var(--negru);
+  color: var(--alb);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  padding: 0.85rem 1.5rem;
 }
 
-.pagina-header h1 {
-  margin: 0 0 0.5rem;
-  font-size: 1.7rem;
+.hero {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0.65) 100%),
+    url("assets/hero-flota.jpeg");
+  background-size: cover;
+  background-position: center 65%;
+  min-height: 220px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.hero h1 {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  color: var(--alb);
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+}
+
+.pagina-header {
+  padding: 1.5rem 1.5rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .subtitlu {
@@ -48,7 +68,10 @@ body {
   margin: 0 0 0.75rem;
 }
 
-.subtitlu a { color: var(--accent); }
+.subtitlu a {
+  color: var(--negru);
+  text-decoration: underline;
+}
 
 .generat-la {
   font-size: 0.85rem;
@@ -65,24 +88,23 @@ main {
 .ascuns { display: none; }
 
 #mesaj-eroare {
-  background: #ffecec;
-  color: #900;
-  border: 1px solid #f2b8b8;
-  border-radius: 8px;
+  background: var(--alb);
+  color: var(--negru);
+  border: 1px solid var(--negru);
   padding: 0.75rem 1rem;
 }
 
 .agent-bloc {
-  background: var(--fundal-card);
-  border: 1px solid var(--linie);
-  border-radius: 12px;
+  background: var(--alb);
+  border: 1px solid var(--negru);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .agent-bloc h2 {
   margin: 0 0 1rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .carduri {
@@ -93,15 +115,15 @@ main {
 }
 
 .card {
-  background: var(--accent-slab);
-  border-radius: 10px;
+  background: var(--crem);
+  border: 1px solid var(--linie);
   padding: 0.9rem 1rem;
 }
 
 .card .valoare {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--negru);
 }
 
 .card .eticheta {
@@ -111,7 +133,7 @@ main {
 
 .card .sub-eticheta {
   font-size: 0.78rem;
-  color: var(--accent);
+  color: var(--negru);
   margin-top: 0.2rem;
   font-weight: 600;
 }
@@ -130,11 +152,10 @@ main {
 
 .selector-fereastra select {
   font: inherit;
-  padding: 0.4rem 0.8rem;
-  border-radius: 8px;
-  border: 1px solid var(--linie);
-  background: var(--fundal-card);
-  color: var(--text);
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--negru);
+  background: var(--alb);
+  color: var(--negru);
   cursor: pointer;
 }
 
@@ -149,9 +170,8 @@ main {
 }
 
 .ultima-rulare-bloc {
-  background: var(--fundal);
-  border: 1px dashed var(--linie);
-  border-radius: 10px;
+  background: var(--crem);
+  border: 1px dashed var(--negru);
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
 }
@@ -159,6 +179,7 @@ main {
 .ultima-rulare-bloc h3 {
   margin: 0 0 0.4rem;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .ultima-rulare-data {
@@ -217,15 +238,13 @@ main {
 .bara-pista {
   flex: 1 1 auto;
   background: var(--linie);
-  border-radius: 6px;
   height: 14px;
   overflow: hidden;
 }
 
 .bara-umplere {
-  background: var(--accent);
+  background: var(--negru);
   height: 100%;
-  border-radius: 6px;
 }
 
 .bara-valoare {
