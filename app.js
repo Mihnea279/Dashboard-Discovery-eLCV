@@ -195,8 +195,10 @@ function randeazaAgent(idAgent, statsAgent) {
 function randeazaTot() {
   const containerAgenti = document.getElementById("agenti");
   const containerSelector = document.getElementById("selector-fereastra");
+  const containerAudit = document.getElementById("audit-info");
   containerAgenti.innerHTML = "";
   containerSelector.innerHTML = "";
+  containerAudit.innerHTML = "";
 
   if (!STATS) return;
 
@@ -210,11 +212,11 @@ function randeazaTot() {
   for (const [idAgent, statsAgent] of Object.entries(agenti)) {
     if (statsAgent.ultimul_audit) {
       const { data_audit, autor } = statsAgent.ultimul_audit;
-      containerAgenti.appendChild(
+      containerAudit.appendChild(
         elem("p", { class: "ultimul-audit", text: `Ultimul audit al recomandărilor: ${data_audit} (${autor})` })
       );
     } else {
-      containerAgenti.appendChild(
+      containerAudit.appendChild(
         elem("p", { class: "ultimul-audit ultimul-audit-lipsa", text: "Niciun audit înregistrat încă." })
       );
     }

@@ -1,17 +1,30 @@
 /* Paletă & stil preluate de la badsi.ro (referință explicită a
    utilizatorului) — negru / crem / alb, colțuri drepte (border-radius: 0
-   peste tot pe site-ul de referință), font Inter (înlocuitor pentru
-   fontul propriu "Porsche-*" folosit acolo, care e proprietar și nu poate
-   fi îmbrăcat aici). Look FIX, intenționat — brandul de referință nu are
-   variantă dark/light, deci nici acest site nu comută pe
-   prefers-color-scheme, la fel ca sursa. */
+   peste tot pe site-ul de referință). Look FIX, intenționat — brandul de
+   referință nu are variantă dark/light, deci nici acest site nu comută pe
+   prefers-color-scheme, la fel ca sursa.
+
+   Sistem tipografic (specificat explicit de utilizator, 1 sep 2026):
+   - Primar — Sinews Sans Pro (Jakob Runge / HVD Fonts): titluri, label-uri,
+     UI. Font comercial, fără webfont disponibil — substituit cu Jost
+     (geometric, cel mai apropiat gratuit de pe Google Fonts). Când există
+     licența, se înlocuiește DOAR importul Jost cu @font-face pentru Sinews
+     mai jos — restul regulilor (var(--font-display)) rămân neschimbate.
+   - Secundar — Gudea (Google Fonts, real, nesubstituit): copy lung și
+     TOATE numerele ("vocea de document tehnic").
+   - Regulă de leading: display (titluri/label-uri/UI) = line-height 1.0
+     (leading = corpul literei); body/copy = relaxat, 1.6–1.75. */
 :root {
   --negru: #000000;
   --crem: #fdf8f4;
   --alb: #ffffff;
+  --alb-60: rgba(255, 255, 255, 0.6);
+  --crem-60: rgba(253, 248, 244, 0.6);
   --text: #212529;
   --text-secundar: #5c6066;
   --linie: rgba(0, 0, 0, 0.14);
+  --font-display: "Jost", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* → Sinews Sans Pro, cu licență */
+  --font-body: "Gudea", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 
@@ -19,10 +32,53 @@
 
 body {
   margin: 0;
-  background: var(--crem);
   color: var(--text);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  line-height: 1.65;
+  background: var(--crem);
+  min-height: 100vh;
+}
+
+/* Display: titluri, label-uri, UI — leading = corpul literei (1.0). */
+h1, h2, h3,
+.bara-brand,
+.titlu-fereastra,
+.selector-fereastra label,
+.selector-fereastra select,
+.card .eticheta,
+.card .sub-eticheta,
+.bara-eticheta {
+  font-family: var(--font-display);
+  line-height: 1;
+}
+
+/* Copy lung și TOATE numerele — Gudea, leading relaxat (moștenit de la
+   body, 1.65) — explicit aici doar ca să nu fie "furate" de o regulă
+   display mai specifică de mai sus/mai jos. */
+.card .valoare,
+.bara-valoare,
+.ultima-rulare-data {
+  font-family: var(--font-body);
+}
+
+/* Poza de flotă ca fundal al întregii pagini, fără niciun voal peste ea
+   (decizie explicită a utilizatorului). Tot textul stă în cutii albe opace
+   deasupra (.panou-principal, .agent-bloc, .pagina-footer) — nu există
+   text scris direct peste fotografie nicăieri pe pagină.
+
+   UN DIV separat, `position: fixed` (nu `background-attachment: fixed`
+   pe body) — `background-attachment: fixed` s-a dovedit nesigur la scroll
+   (goluri albe, comportament divergent între browsere/WebKit; nesuportat
+   deloc pe iOS Safari) — un element propriu, fix-poziționat, în spatele
+   conținutului (z-index: -1) e mult mai previzibil cross-browser. */
+.fundal-poza {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("assets/hero-flota.jpeg");
+  background-size: cover;
+  background-position: center 65%;
+  background-repeat: no-repeat;
 }
 
 .bara-brand {
@@ -35,31 +91,31 @@ body {
   padding: 0.85rem 1.5rem;
 }
 
-.hero {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0.65) 100%),
-    url("assets/hero-flota.jpeg");
-  background-size: cover;
-  background-position: center 65%;
-  min-height: 220px;
-  display: flex;
-  align-items: flex-end;
-  padding: 1.5rem;
-}
-
-.hero h1 {
-  margin: 0 auto;
-  max-width: 960px;
-  width: 100%;
-  color: var(--alb);
-  font-size: 2rem;
-  font-weight: 600;
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
+/* Cutie albă unică ce acoperă titlul, subtitlul, data exportului,
+   selectorul de perioadă și linia de audit — extinsă la cererea
+   utilizatorului să înglobeze tot ce înainte sta direct pe fotografie.
+   Mutată ÎN <main> (nu mai e copil direct al <body>) — ca lățimea ei să
+   fie IDENTICĂ cu a cutiei de statistici (.agent-bloc), care e tot copil
+   al lui <main>: ambele moștenesc același max-width+padding de-acolo, în
+   loc să-și calculeze fiecare separat propriul "max-width: 960px" (bug
+   real, semnalat de utilizator — cele două cutii ieșeau cu lățimi diferite
+   fiindcă .agent-bloc era inset de padding-ul lui <main>, iar
+   .panou-principal, copil direct al <body>, nu avea acel inset). */
+.panou-principal {
+  background: var(--alb-60);
+  border: 1px solid var(--negru);
+  padding: 1.5rem 1.5rem 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .pagina-header {
-  padding: 1.5rem 1.5rem 1.5rem;
-  max-width: 960px;
-  margin: 0 auto;
+  padding: 0;
+}
+
+.pagina-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .subtitlu {
@@ -76,26 +132,26 @@ body {
 .generat-la {
   font-size: 0.85rem;
   color: var(--text-secundar);
-  margin: 0;
+  margin: 0 0 1rem;
 }
 
 main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1.5rem 3rem;
+  padding: 1.5rem 1.5rem 3rem;
 }
 
 .ascuns { display: none; }
 
 #mesaj-eroare {
-  background: var(--alb);
+  background: var(--alb-60);
   color: var(--negru);
   border: 1px solid var(--negru);
   padding: 0.75rem 1rem;
 }
 
 .agent-bloc {
-  background: var(--alb);
+  background: var(--alb-60);
   border: 1px solid var(--negru);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -115,8 +171,8 @@ main {
 }
 
 .card {
-  background: var(--crem);
-  border: 1px solid var(--linie);
+  background: var(--crem-60);
+  border: 1px solid var(--negru);
   padding: 0.9rem 1rem;
 }
 
@@ -139,7 +195,7 @@ main {
 }
 
 .selector-fereastra {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
@@ -147,14 +203,13 @@ main {
 
 .selector-fereastra label {
   font-size: 0.85rem;
-  color: var(--text-secundar);
 }
 
 .selector-fereastra select {
   font: inherit;
   padding: 0.5rem 0.9rem;
   border: 1px solid var(--negru);
-  background: var(--alb);
+  background: var(--alb-60);
   color: var(--negru);
   cursor: pointer;
 }
@@ -170,7 +225,7 @@ main {
 }
 
 .ultima-rulare-bloc {
-  background: var(--crem);
+  background: var(--crem-60);
   border: 1px dashed var(--negru);
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
@@ -256,8 +311,16 @@ main {
 
 .pagina-footer {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 0 1.5rem 2rem;
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.pagina-footer p {
+  display: inline-block;
+  background: var(--alb-60);
+  border: 1px solid var(--negru);
   color: var(--text-secundar);
   font-size: 0.8rem;
+  margin: 0;
+  padding: 0.6rem 0.9rem;
 }
