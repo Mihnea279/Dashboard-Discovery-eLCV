@@ -159,7 +159,11 @@ function randeazaAgent(idAgent, statsAgent) {
   const carduri = elem("div", { class: "carduri" }, [
     cardStat(formateazaNumar(fw.numar_leaduri_noi), "Lead-uri noi"),
     cardStat(formateazaNumar(fw.scor_mediu), "Scor mediu"),
-    cardStat(formateazaNumar(fw.timp_mediu_procesare_ore, " h"), "Timp mediu de procesare"),
+    cardStat(
+      formateazaNumar(fw.timp_mediu_procesare_minute, " min"),
+      "Timp mediu de procesare",
+      "CRM → scor → recomandare"
+    ),
     cardStat(
       formateazaNumar(fw.cui_negasite) + " / " + formateazaNumar(fw.cui_verificate_total),
       "CUI negăsit",
