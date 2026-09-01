@@ -1,38 +1,114 @@
 {
-  "generat_la": "2026-08-27T10:06:54+00:00",
+  "generat_la": "2026-09-01T11:52:37+00:00",
   "agenti": {
     "discovery_b2b": {
-      "total_leads": 7,
-      "dupa_status": {
-        "Follow-up trimis, în așteptare răspuns": 5,
-        "Zero Value": 2
-      },
-      "dupa_agent_status": {
-        "asteapta": 3,
-        "gata": 4
-      },
-      "dupa_clasificare_scor": {
-        "Cold": 2,
-        "Warm": 2
-      },
-      "dupa_banda_scor_intermediar": {},
-      "dupa_banda_scor_final": {
-        "10-19": 2,
-        "30-40": 2
-      },
-      "dupa_industrie": {
-        "Servicii & Mentenanță": 2,
-        "HoReCa & Catering": 2,
-        "Altele": 1,
-        "Curierat & Livrari": 1,
-        "Constructii & instalatii": 1
-      },
-      "zile_de_la_trimitere_fara_raspuns": {
-        "8+": 3
-      },
-      "feedback_store_dupa_status": {
-        "Vândut - model recomandat": 9,
-        "Vândut - alt model": 2
+      "total_leaduri_in_grup": 775,
+      "ultimul_audit": null,
+      "ultima_rulare": null,
+      "ferestre": {
+        "24h": {
+          "numar_leaduri_noi": 8,
+          "scor_mediu": 19.2,
+          "timp_mediu_procesare_ore": 8.5,
+          "dupa_status": {
+            "Necontactat": 8
+          },
+          "necontactate_procent_schimbare_vs_perioada_anterioara": 33.3,
+          "necontactate_curent": 8,
+          "necontactate_anterior": 6,
+          "cui_negasite": 1,
+          "cui_verificate_total": 7,
+          "cui_negasite_procent": 14.3,
+          "recomandari_cu_erori": 0,
+          "recomandari_analizate_total": 0,
+          "recomandari_cu_erori_procent": null,
+          "recomandari_dupa_tip_vehicul": {
+            "Farizon V7E 67kWh": 4,
+            "Farizon V7E 50kWh": 2,
+            "Farizon SV (Supervan)": 1
+          }
+        },
+        "saptamana": {
+          "numar_leaduri_noi": 80,
+          "scor_mediu": 17.7,
+          "timp_mediu_procesare_ore": 40.8,
+          "dupa_status": {
+            "Necontactat": 36,
+            "Zero Value": 5,
+            "Prezentare produs": 27,
+            "În prospectare": 12
+          },
+          "necontactate_procent_schimbare_vs_perioada_anterioara": 3500.0,
+          "necontactate_curent": 36,
+          "necontactate_anterior": 1,
+          "cui_negasite": 7,
+          "cui_verificate_total": 68,
+          "cui_negasite_procent": 10.3,
+          "recomandari_cu_erori": 0,
+          "recomandari_analizate_total": 0,
+          "recomandari_cu_erori_procent": null,
+          "recomandari_dupa_tip_vehicul": {
+            "Farizon V7E 67kWh": 27,
+            "Farizon SV (Supervan)": 17,
+            "Farizon V7E 50kWh": 22
+          }
+        },
+        "luna": {
+          "numar_leaduri_noi": 196,
+          "scor_mediu": 17.6,
+          "timp_mediu_procesare_ore": 157.4,
+          "dupa_status": {
+            "Necontactat": 38,
+            "Zero Value": 41,
+            "Prezentare produs": 68,
+            "În prospectare": 42,
+            "În negociere": 6,
+            "Contractat": 1
+          },
+          "necontactate_procent_schimbare_vs_perioada_anterioara": 3700.0,
+          "necontactate_curent": 38,
+          "necontactate_anterior": 1,
+          "cui_negasite": 10,
+          "cui_verificate_total": 74,
+          "cui_negasite_procent": 13.5,
+          "recomandari_cu_erori": 0,
+          "recomandari_analizate_total": 0,
+          "recomandari_cu_erori_procent": null,
+          "recomandari_dupa_tip_vehicul": {
+            "Farizon V7E 67kWh": 28,
+            "Farizon SV (Supervan)": 17,
+            "Farizon V7E 50kWh": 22
+          }
+        },
+        "an": {
+          "numar_leaduri_noi": 773,
+          "scor_mediu": 16.5,
+          "timp_mediu_procesare_ore": 720.2,
+          "dupa_status": {
+            "Necontactat": 80,
+            "Zero Value": 346,
+            "Prezentare produs": 184,
+            "În prospectare": 134,
+            "În negociere": 8,
+            "Contractat": 5,
+            "Vânzare pierdută": 6,
+            "Livrat": 10
+          },
+          "necontactate_procent_schimbare_vs_perioada_anterioara": null,
+          "necontactate_curent": 80,
+          "necontactate_anterior": 0,
+          "cui_negasite": 29,
+          "cui_verificate_total": 116,
+          "cui_negasite_procent": 25.0,
+          "recomandari_cu_erori": 0,
+          "recomandari_analizate_total": 0,
+          "recomandari_cu_erori_procent": null,
+          "recomandari_dupa_tip_vehicul": {
+            "Farizon V7E 67kWh": 28,
+            "Farizon V7E 50kWh": 22,
+            "Farizon SV (Supervan)": 17
+          }
+        }
       }
     }
   }
