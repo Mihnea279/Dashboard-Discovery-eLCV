@@ -154,7 +154,7 @@ function randeazaAgent(idAgent, statsAgent) {
   const bloc = elem("section", { class: "agent-bloc" }, [elem("h2", { text: nume })]);
 
   bloc.appendChild(randeazaUltimaRulare(statsAgent.ultima_rulare));
-  bloc.appendChild(elem("h3", { class: "titlu-fereastra", text: `Statistici pe fereastra: ${FERESTRE.find(([c]) => c === FEREASTRA_CURENTA)[1]}` }));
+  bloc.appendChild(elem("h3", { class: "titlu-fereastra", text: `Statistici: ${FERESTRE.find(([c]) => c === FEREASTRA_CURENTA)[1]}` }));
 
   const carduri = elem("div", { class: "carduri" }, [
     cardStat(formateazaNumar(fw.numar_leaduri_noi), "Lead-uri noi"),
