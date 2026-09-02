@@ -1,5 +1,5 @@
 {
-  "generat_la": "2026-09-02T07:09:56+00:00",
+  "generat_la": "2026-09-02T07:39:53+00:00",
   "agenti": {
     "discovery_b2b": {
       "total_leaduri_in_grup": 780,
@@ -52,9 +52,9 @@
           "recomandari_analizate_total": 22,
           "recomandari_cu_erori_procent": 13.6,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 67kWh": 28,
+            "Farizon V7E 50kWh": 18,
             "Farizon SV (Supervan)": 13,
-            "Farizon V7E 50kWh": 18
+            "Farizon V7E 67kWh": 28
           }
         },
         "luna": {
@@ -80,8 +80,8 @@
           "recomandari_cu_erori_procent": 13.6,
           "recomandari_dupa_tip_vehicul": {
             "Farizon V7E 67kWh": 32,
-            "Farizon V7E 50kWh": 23,
-            "Farizon SV (Supervan)": 17
+            "Farizon SV (Supervan)": 17,
+            "Farizon V7E 50kWh": 23
           }
         },
         "an": {
@@ -109,8 +109,8 @@
           "recomandari_cu_erori_procent": 13.6,
           "recomandari_dupa_tip_vehicul": {
             "Farizon V7E 67kWh": 32,
-            "Farizon V7E 50kWh": 23,
-            "Farizon SV (Supervan)": 17
+            "Farizon SV (Supervan)": 17,
+            "Farizon V7E 50kWh": 23
           }
         }
       }
