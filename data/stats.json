@@ -1,5 +1,5 @@
 {
-  "generat_la": "2026-09-28T06:01:34+00:00",
+  "generat_la": "2026-09-29T06:01:24+00:00",
   "agenti": {
     "discovery_b2b": {
       "total_leaduri_in_grup": 840,
@@ -8,7 +8,7 @@
         "autor": "Claude (audit uman)"
       },
       "ultima_rulare": {
-        "data_rulare": "2026-09-28T06:00:28+00:00",
+        "data_rulare": "2026-09-29T06:00:25+00:00",
         "total_lead_uri": "0",
         "finalizate": "0",
         "erori": "0",
@@ -32,16 +32,15 @@
           "recomandari_dupa_tip_vehicul": {}
         },
         "saptamana": {
-          "numar_leaduri_noi": 2,
+          "numar_leaduri_noi": 1,
           "scor_mediu": 25.0,
-          "timp_mediu_procesare_minute": 0.1,
+          "timp_mediu_procesare_minute": 0.0,
           "dupa_status": {
-            "Prezentare produs": 1,
-            "În negociere": 1
+            "Prezentare produs": 1
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": -100.0,
           "necontactate_curent": 0,
-          "necontactate_anterior": 4,
+          "necontactate_anterior": 3,
           "cui_negasite": 0,
           "cui_verificate_total": 0,
           "cui_negasite_procent": null,
@@ -51,30 +50,30 @@
           "recomandari_dupa_tip_vehicul": {}
         },
         "luna": {
-          "numar_leaduri_noi": 95,
-          "scor_mediu": 19.4,
+          "numar_leaduri_noi": 83,
+          "scor_mediu": 20.2,
           "timp_mediu_procesare_minute": 0.4,
           "dupa_status": {
-            "Prezentare produs": 32,
+            "Prezentare produs": 30,
             "În negociere": 5,
-            "Necontactat": 8,
-            "Zero Value": 42,
-            "În prospectare": 8
+            "Necontactat": 7,
+            "Zero Value": 37,
+            "În prospectare": 4
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": 75.0,
           "necontactate_curent": 7,
           "necontactate_anterior": 4,
-          "cui_negasite": 7,
-          "cui_verificate_total": 43,
-          "cui_negasite_procent": 16.3,
+          "cui_negasite": 5,
+          "cui_verificate_total": 36,
+          "cui_negasite_procent": 13.9,
           "recomandari_cu_erori": 3,
           "recomandari_analizate_total": 44,
           "recomandari_cu_erori_procent": 6.8,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E": 5,
-            "Farizon V7E 67kWh": 18,
-            "Farizon V7E 50kWh": 15,
-            "Farizon SV (Supervan)": 3
+            "Farizon V7E 50kWh": 13,
+            "Farizon V7E 67kWh": 16,
+            "Farizon SV (Supervan)": 2,
+            "Farizon V7E": 4
           }
         },
         "an": {
@@ -82,11 +81,11 @@
           "scor_mediu": 17.0,
           "timp_mediu_procesare_minute": 0.4,
           "dupa_status": {
-            "Prezentare produs": 121,
-            "În negociere": 24,
+            "Prezentare produs": 119,
+            "În negociere": 23,
             "Necontactat": 75,
-            "Zero Value": 498,
-            "În prospectare": 94,
+            "Zero Value": 505,
+            "În prospectare": 90,
             "Contractat": 5,
             "Livrat": 14,
             "Vânzare pierdută": 7
@@ -94,17 +93,17 @@
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
           "necontactate_curent": 71,
           "necontactate_anterior": 0,
-          "cui_negasite": 38,
-          "cui_verificate_total": 131,
-          "cui_negasite_procent": 29.0,
+          "cui_negasite": 37,
+          "cui_verificate_total": 127,
+          "cui_negasite_procent": 29.1,
           "recomandari_cu_erori": 3,
           "recomandari_analizate_total": 44,
           "recomandari_cu_erori_procent": 6.8,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E": 5,
-            "Farizon V7E 50kWh": 20,
-            "Farizon V7E 67kWh": 28,
-            "Farizon SV (Supervan)": 9
+            "Farizon V7E 50kWh": 19,
+            "Farizon V7E 67kWh": 27,
+            "Farizon SV (Supervan)": 9,
+            "Farizon V7E": 4
           }
         }
       }
