@@ -1,5 +1,5 @@
 {
-  "generat_la": "2026-10-16T06:01:25+00:00",
+  "generat_la": "2026-10-19T06:01:18+00:00",
   "agenti": {
     "discovery_b2b": {
       "total_leaduri_in_grup": 848,
@@ -8,7 +8,7 @@
         "autor": "Claude (audit uman)"
       },
       "ultima_rulare": {
-        "data_rulare": "2026-10-16T06:00:30+00:00",
+        "data_rulare": "2026-10-19T06:00:25+00:00",
         "total_lead_uri": "0",
         "finalizate": "0",
         "erori": "0",
@@ -32,11 +32,11 @@
           "recomandari_dupa_tip_vehicul": {}
         },
         "saptamana": {
-          "numar_leaduri_noi": 4,
-          "scor_mediu": 23.8,
+          "numar_leaduri_noi": 2,
+          "scor_mediu": 20.0,
           "timp_mediu_procesare_minute": 0.0,
           "dupa_status": {
-            "Prezentare produs": 4
+            "Prezentare produs": 2
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
           "necontactate_curent": 0,
@@ -50,27 +50,24 @@
           "recomandari_dupa_tip_vehicul": {}
         },
         "luna": {
-          "numar_leaduri_noi": 14,
-          "scor_mediu": 23.1,
+          "numar_leaduri_noi": 10,
+          "scor_mediu": 23.0,
           "timp_mediu_procesare_minute": 0.1,
           "dupa_status": {
             "Prezentare produs": 7,
-            "Zero Value": 3,
-            "În negociere": 1,
-            "Necontactat": 3
+            "Zero Value": 2,
+            "În negociere": 1
           },
-          "necontactate_procent_schimbare_vs_perioada_anterioara": -50.0,
-          "necontactate_curent": 3,
-          "necontactate_anterior": 6,
+          "necontactate_procent_schimbare_vs_perioada_anterioara": -100.0,
+          "necontactate_curent": 0,
+          "necontactate_anterior": 8,
           "cui_negasite": 1,
-          "cui_verificate_total": 4,
-          "cui_negasite_procent": 25.0,
+          "cui_verificate_total": 1,
+          "cui_negasite_procent": 100.0,
           "recomandari_cu_erori": 0,
           "recomandari_analizate_total": 0,
           "recomandari_cu_erori_procent": null,
-          "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 50kWh": 3
-          }
+          "recomandari_dupa_tip_vehicul": {}
         },
         "an": {
           "numar_leaduri_noi": 846,
@@ -78,28 +75,28 @@
           "timp_mediu_procesare_minute": 0.4,
           "dupa_status": {
             "Prezentare produs": 97,
-            "Zero Value": 553,
+            "Zero Value": 556,
             "În negociere": 20,
-            "Necontactat": 66,
+            "Necontactat": 63,
             "În prospectare": 84,
             "Contractat": 4,
             "Livrat": 15,
             "Vânzare pierdută": 7
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
-          "necontactate_curent": 62,
+          "necontactate_curent": 59,
           "necontactate_anterior": 0,
-          "cui_negasite": 33,
-          "cui_verificate_total": 105,
-          "cui_negasite_procent": 31.4,
+          "cui_negasite": 31,
+          "cui_verificate_total": 103,
+          "cui_negasite_procent": 30.1,
           "recomandari_cu_erori": 3,
           "recomandari_analizate_total": 44,
           "recomandari_cu_erori_procent": 6.8,
           "recomandari_dupa_tip_vehicul": {
             "Farizon V7E 50kWh": 11,
             "Farizon V7E 67kWh": 21,
-            "Farizon V7E": 3,
-            "Farizon SV (Supervan)": 6
+            "Farizon SV (Supervan)": 6,
+            "Farizon V7E": 3
           }
         }
       }
