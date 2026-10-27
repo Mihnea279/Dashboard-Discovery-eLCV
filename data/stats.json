@@ -1,5 +1,5 @@
 {
-  "generat_la": "2026-10-26T07:01:14+00:00",
+  "generat_la": "2026-10-27T07:01:18+00:00",
   "agenti": {
     "discovery_b2b": {
       "total_leaduri_in_grup": 851,
@@ -8,7 +8,7 @@
         "autor": "Claude (audit uman)"
       },
       "ultima_rulare": {
-        "data_rulare": "2026-10-26T07:00:25+00:00",
+        "data_rulare": "2026-10-27T07:00:28+00:00",
         "total_lead_uri": "0",
         "finalizate": "0",
         "erori": "0",
@@ -32,12 +32,12 @@
           "recomandari_dupa_tip_vehicul": {}
         },
         "saptamana": {
-          "numar_leaduri_noi": 3,
+          "numar_leaduri_noi": 2,
           "scor_mediu": 27.5,
           "timp_mediu_procesare_minute": null,
           "dupa_status": {
             "Prezentare produs": 1,
-            "Zero Value": 2
+            "Zero Value": 1
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
           "necontactate_curent": 0,
@@ -74,8 +74,8 @@
           "scor_mediu": 17.1,
           "timp_mediu_procesare_minute": 0.4,
           "dupa_status": {
-            "Prezentare produs": 82,
-            "Zero Value": 574,
+            "Prezentare produs": 81,
+            "Zero Value": 575,
             "În negociere": 20,
             "Necontactat": 62,
             "În prospectare": 83,
