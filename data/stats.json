@@ -1,5 +1,5 @@
 {
-  "generat_la": "2026-10-29T07:01:24+00:00",
+  "generat_la": "2026-10-30T07:01:25+00:00",
   "agenti": {
     "discovery_b2b": {
       "total_leaduri_in_grup": 853,
@@ -8,7 +8,7 @@
         "autor": "Claude (audit uman)"
       },
       "ultima_rulare": {
-        "data_rulare": "2026-10-29T07:00:31+00:00",
+        "data_rulare": "2026-10-30T07:00:33+00:00",
         "total_lead_uri": "0",
         "finalizate": "0",
         "erori": "0",
@@ -74,21 +74,21 @@
           "scor_mediu": 17.1,
           "timp_mediu_procesare_minute": 0.4,
           "dupa_status": {
-            "În negociere": 22,
-            "Zero Value": 576,
-            "Prezentare produs": 77,
-            "Necontactat": 62,
-            "În prospectare": 86,
-            "Livrat": 18,
-            "Contractat": 3,
+            "În negociere": 21,
+            "Zero Value": 582,
+            "Prezentare produs": 74,
+            "Necontactat": 61,
+            "În prospectare": 85,
+            "Livrat": 19,
+            "Contractat": 2,
             "Vânzare pierdută": 7
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
           "necontactate_curent": 57,
           "necontactate_anterior": 0,
           "cui_negasite": 28,
-          "cui_verificate_total": 91,
-          "cui_negasite_procent": 30.8,
+          "cui_verificate_total": 90,
+          "cui_negasite_procent": 31.1,
           "recomandari_cu_erori": 3,
           "recomandari_analizate_total": 44,
           "recomandari_cu_erori_procent": 6.8,
