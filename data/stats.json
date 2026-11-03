@@ -1,5 +1,5 @@
 {
-  "generat_la": "2026-11-02T07:01:21+00:00",
+  "generat_la": "2026-11-03T07:01:24+00:00",
   "agenti": {
     "discovery_b2b": {
       "total_leaduri_in_grup": 853,
@@ -8,7 +8,7 @@
         "autor": "Claude (audit uman)"
       },
       "ultima_rulare": {
-        "data_rulare": "2026-11-02T07:00:31+00:00",
+        "data_rulare": "2026-11-03T07:00:32+00:00",
         "total_lead_uri": "0",
         "finalizate": "0",
         "erori": "0",
@@ -75,27 +75,27 @@
           "timp_mediu_procesare_minute": 0.4,
           "dupa_status": {
             "În negociere": 21,
-            "Zero Value": 595,
-            "Prezentare produs": 68,
-            "Necontactat": 50,
-            "În prospectare": 89,
+            "Zero Value": 597,
+            "Prezentare produs": 69,
+            "Necontactat": 42,
+            "În prospectare": 94,
             "Livrat": 19,
             "Contractat": 2,
             "Vânzare pierdută": 7
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
-          "necontactate_curent": 46,
+          "necontactate_curent": 38,
           "necontactate_anterior": 0,
           "cui_negasite": 25,
-          "cui_verificate_total": 81,
-          "cui_negasite_procent": 30.9,
+          "cui_verificate_total": 80,
+          "cui_negasite_procent": 31.2,
           "recomandari_cu_erori": 3,
           "recomandari_analizate_total": 44,
           "recomandari_cu_erori_procent": 6.8,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 50kWh": 9,
+            "Farizon V7E 67kWh": 17,
             "Farizon SV (Supervan)": 5,
-            "Farizon V7E 67kWh": 17
+            "Farizon V7E 50kWh": 9
           }
         }
       }
