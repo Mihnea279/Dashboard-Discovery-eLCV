@@ -1,14 +1,14 @@
 {
-  "generat_la": "2026-11-18T07:07:22+00:00",
+  "generat_la": "2026-11-19T07:07:07+00:00",
   "agenti": {
     "discovery_b2b": {
-      "total_leaduri_in_grup": 971,
+      "total_leaduri_in_grup": 978,
       "ultimul_audit": {
         "data_audit": "2026-09-07",
         "autor": "Claude (audit uman)"
       },
       "ultima_rulare": {
-        "data_rulare": "2026-11-18T07:05:49+00:00",
+        "data_rulare": "2026-11-19T07:05:34+00:00",
         "total_lead_uri": "8",
         "finalizate": "8",
         "erori": "0",
@@ -16,105 +16,105 @@
       },
       "ferestre": {
         "24h": {
-          "numar_leaduri_noi": 6,
-          "scor_mediu": 15.8,
-          "timp_mediu_procesare_minute": 0.7,
+          "numar_leaduri_noi": 9,
+          "scor_mediu": 11.2,
+          "timp_mediu_procesare_minute": 0.6,
           "dupa_status": {
-            "Necontactat": 4,
-            "Prezentare produs": 2
+            "Necontactat": 9
           },
-          "necontactate_procent_schimbare_vs_perioada_anterioara": 100.0,
-          "necontactate_curent": 4,
+          "necontactate_procent_schimbare_vs_perioada_anterioara": 350.0,
+          "necontactate_curent": 9,
           "necontactate_anterior": 2,
-          "cui_negasite": 2,
-          "cui_verificate_total": 6,
+          "cui_negasite": 3,
+          "cui_verificate_total": 9,
           "cui_negasite_procent": 33.3,
           "recomandari_cu_erori": 0,
           "recomandari_analizate_total": 0,
           "recomandari_cu_erori_procent": null,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 67kWh": 4,
-            "Farizon V7E 50kWh": 2
+            "Farizon V7E 50kWh": 4,
+            "Farizon SV (Supervan)": 2,
+            "Farizon V7E 67kWh": 3
           }
         },
         "saptamana": {
-          "numar_leaduri_noi": 72,
-          "scor_mediu": 15.9,
+          "numar_leaduri_noi": 60,
+          "scor_mediu": 14.9,
           "timp_mediu_procesare_minute": 0.6,
           "dupa_status": {
-            "Necontactat": 7,
-            "Prezentare produs": 38,
-            "În prospectare": 17,
-            "Zero Value": 10
+            "Necontactat": 12,
+            "Prezentare produs": 34,
+            "În prospectare": 10,
+            "Zero Value": 4
           },
-          "necontactate_procent_schimbare_vs_perioada_anterioara": 133.3,
-          "necontactate_curent": 7,
+          "necontactate_procent_schimbare_vs_perioada_anterioara": 300.0,
+          "necontactate_curent": 12,
           "necontactate_anterior": 3,
-          "cui_negasite": 10,
-          "cui_verificate_total": 59,
-          "cui_negasite_procent": 16.9,
+          "cui_negasite": 9,
+          "cui_verificate_total": 54,
+          "cui_negasite_procent": 16.7,
           "recomandari_cu_erori": 0,
           "recomandari_analizate_total": 0,
           "recomandari_cu_erori_procent": null,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 67kWh": 30,
-            "Farizon SV (Supervan)": 7,
-            "Farizon V7E 50kWh": 21
+            "Farizon V7E 67kWh": 28,
+            "Farizon V7E 50kWh": 18,
+            "Farizon SV (Supervan)": 7
           }
         },
         "luna": {
-          "numar_leaduri_noi": 131,
-          "scor_mediu": 16.9,
+          "numar_leaduri_noi": 139,
+          "scor_mediu": 16.6,
           "timp_mediu_procesare_minute": 0.6,
           "dupa_status": {
-            "Necontactat": 10,
-            "Prezentare produs": 66,
-            "În prospectare": 33,
-            "Zero Value": 20,
+            "Necontactat": 15,
+            "Prezentare produs": 75,
+            "În prospectare": 26,
+            "Zero Value": 21,
             "În negociere": 2
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
-          "necontactate_curent": 10,
+          "necontactate_curent": 15,
           "necontactate_anterior": 0,
-          "cui_negasite": 16,
-          "cui_verificate_total": 101,
-          "cui_negasite_procent": 15.8,
+          "cui_negasite": 19,
+          "cui_verificate_total": 109,
+          "cui_negasite_procent": 17.4,
           "recomandari_cu_erori": 0,
           "recomandari_analizate_total": 0,
           "recomandari_cu_erori_procent": null,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 50kWh": 45,
-            "Farizon V7E 67kWh": 45,
-            "Farizon SV (Supervan)": 9
+            "Farizon V7E 67kWh": 48,
+            "Farizon V7E 50kWh": 48,
+            "Farizon SV (Supervan)": 11
           }
         },
         "an": {
-          "numar_leaduri_noi": 965,
+          "numar_leaduri_noi": 974,
           "scor_mediu": 17.0,
           "timp_mediu_procesare_minute": 0.5,
           "dupa_status": {
-            "Necontactat": 24,
-            "Prezentare produs": 133,
-            "În prospectare": 125,
-            "Zero Value": 639,
-            "În negociere": 16,
+            "Necontactat": 26,
+            "Prezentare produs": 140,
+            "În prospectare": 122,
+            "Zero Value": 641,
+            "În negociere": 17,
             "Livrat": 19,
             "Contractat": 2,
             "Vânzare pierdută": 7
           },
           "necontactate_procent_schimbare_vs_perioada_anterioara": null,
-          "necontactate_curent": 19,
+          "necontactate_curent": 21,
           "necontactate_anterior": 0,
-          "cui_negasite": 36,
-          "cui_verificate_total": 158,
-          "cui_negasite_procent": 22.8,
+          "cui_negasite": 39,
+          "cui_verificate_total": 166,
+          "cui_negasite_procent": 23.5,
           "recomandari_cu_erori": 3,
           "recomandari_analizate_total": 44,
           "recomandari_cu_erori_procent": 6.8,
           "recomandari_dupa_tip_vehicul": {
-            "Farizon V7E 50kWh": 48,
-            "Farizon V7E 67kWh": 59,
-            "Farizon SV (Supervan)": 12
+            "Farizon V7E 50kWh": 51,
+            "Farizon V7E 67kWh": 62,
+            "Farizon SV (Supervan)": 14
           }
         }
       }
